@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owl Carosel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.green.css">
+</head>
+<style>
+  
+    img{
+        height: 180px;
+    }
+</style>
+<body>
+    <div class="container">
+        <h2 class="text-center m-5">Carosel</h2>
+        <div class="row">
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img src="img/avenue-815297_640.jpg" alt=""></div>
+                <div class="item"><img src="img/bird-1045954_640.jpg" alt=""></div>
+                <div class="item"><img src="img/butterflies-1127666_640.jpg " alt=""></div>
+                <div class="item"><img src="img/dandelion-445228_640.jpg" alt=""></div>
+                <div class="item"><img src="img/fantasy-2049567_640.jpg" alt=""></div>
+                <div class="item"><img src="img/flowers-19830_640.jpg" alt=""></div>
+                <div class="item"><img src="img/flowers-276014_640.jpg" alt=""></div>
+                <div class="item"><img src="img/forest-1072828_640.jpg" alt=""></div>
+                <div class="item"><img src="img/forest-1072828_640.jpg" alt=""></div>
+                <div class="item"><img src="img/istockphoto-1394781347-170667a.jpg" alt=""></div>
+                <div class="item"><img src="img/istockphoto-1419410282-170667a.jpg" alt=""></div>
+                <div class="item"><img src="img/istockphoto-1432690812-170667a.jpg" alt=""></div>
+                <div class="item"><img src="img/istockphoto-1438931606-170667a.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            rtl:true,
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
+    </script>
+</body>
+</html>
